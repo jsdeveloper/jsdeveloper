@@ -1,0 +1,637 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+	font-size: 13px; 
+	
+}
+#header {
+	height: 100px;
+	padding-top: 25px;
+}
+
+#searchImgBox span {
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFF;
+	height: 49px;
+	display: block;
+	line-height: 40px;
+	padding-left: 55px;
+	padding-top: 1px;
+} 
+
+.imgSearchCarText {
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFF;
+	height: 49px;
+	display: block;
+	line-height: 40px;
+	padding-left: 55px;
+	padding-top: 1px;
+}
+
+#logo {
+	background-repeat: no-repeat;
+	float: left;
+	height: 71px;
+	width: 455px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+a:link {
+	text-decoration: none;
+}
+#nav {
+	float: right;
+	width: 505px;
+	margin-top: 60px;
+	text-align: justify;
+}
+#navspace {
+	height: 5px;
+	background-color: #000;
+}
+#RenderBody {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#footer {
+	height: 40px;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #000;
+	padding-top: 5px;
+	
+}
+#footernavL {
+	float: left;
+	width: 300px;
+}
+#menu {
+	list-style-type: none;
+	position: relative;
+	display: block;
+
+}
+#menu li {
+	float: right;
+	height: 40px;
+	width: 100px;
+	text-align: center;
+	background-image: url(/images/button.png);
+	background-repeat: no-repeat;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+
+}
+#menu li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	line-height: 40px;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+#footermenu li {
+	float: left;
+	display: block;
+	padding: 4px;
+	width: 50px;
+	list-style-type: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#footernavR a {
+	color: #CCC;
+}
+#footermenu li a {
+	color: #039;
+}
+#footernavR {
+	float: right;
+	width: 250px;
+	color: #CCC;
+	padding: 5px;
+}
+#menu li a:hover {
+	background-image: url(/images/buttonHover.png);
+	color: #FFF;
+}
+#menu li a.focus {
+	background-image: url(/images/buttonHover.png);
+	color: #FFF;
+}
+#container {
+	position: relative;
+	width: 1026px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+.dropdownList {
+	width: 200px;
+}
+.dropdownList170px {
+	width: 190px;
+}
+.dw100px {
+	width: 90px;
+}
+.dw85px {
+	width: 85px;
+}
+p{
+	text-align:left;
+}
+#Login {
+	float: right;
+	position: relative;
+	height: 25px;
+	width: 132px;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#boxLogin #Login ul li {
+	list-style-type: none;
+	float: left;
+	height: 25px;
+	width: 57px;
+	text-align:right;
+	display: block;
+	padding: 2px;
+	
+}
+#container #footer {
+	padding-bottom: 5px;
+}
+#searchBox {
+	width: 290px;
+	border: thin solid #000;
+	padding: 15px;
+	height: 320px;
+	background-image: url(/images/SearchBoxBG.png);
+	background-repeat: no-repeat;
+}
+#searchImgBox {
+	height: 45px;
+	width: 287px;
+	background-image: url(/images/search-car.png);
+}
+#searchBox p .title {
+	padding-right: 20px;
+	float: left;
+	width: 50px;
+	box-shadow:#000;
+}
+#MainBox #FeaturedListL {
+	float: left;
+	background-color: #FFF;
+	border: thin solid #CCC;
+	height: 400px;
+	width: 709px;
+}
+#MainBox #spaceL {
+	height: 10px;
+	float: left;
+	width: 700px;
+}
+#IndexBoxL {
+	width: 700px;
+	float: left;
+	padding: 5px;
+	height: 355px;
+	background-image: url(/images/BoxIndexL.png);
+	background-repeat: no-repeat;	
+}
+#BoxTextL {
+	float: right;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	width: 350px;
+}
+p .bold {
+	font-weight: bold;
+}
+#searchBox p {
+	padding: 0px;
+	margin: 0px;
+	height: 35px;
+}
+
+#BoxSearchBL {
+	text-align: center;
+	padding-top: 20px;
+}
+#searchBoxBtnR {
+	float: right;
+	padding-top: 8px;
+}
+.clearBox {
+	clear: both;
+}
+#MainBox #BrowserMakeR {
+	height: 470px;
+	width: 300px;
+	background-color: #FFF;
+	float: right;
+	padding-bottom: 10px;
+	overflow: visible;
+	z-index: auto;
+}
+#BrowserMakeR #MakeImg {
+	border: thin solid #CCC;
+	height: 430px;
+}
+#MakeImg .headerBrowser {
+	background-image: url(/images/headerBGBrowserByMake.png);
+	background-repeat: repeat;
+	height: 40px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+
+}
+#MakeImg #middle-browser {
+	float: left;
+	height: 40px;
+	display: block;
+}
+#middle-browser a img {
+	padding-top: 5px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#MakeImg .headerBrowser span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #1D1D1D;
+	text-align: center;
+	text-indent: 15px;
+	display: block;
+	height: 40px;
+	float: left;
+	padding-top: 10px;
+}
+#FeaturedListL .headerBrowser {
+	height: 40px;
+	background-image: url(/images/headerBGFutured.png);
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#FeaturedListL .headerBrowser span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #CCC;
+	text-align: center;
+	text-indent: 15px;
+	display: block;
+	height: 40px;
+	float: left;
+	padding-top: 10px;
+}
+.mainSearch .searchCarBox {
+	padding: 10px;
+	background-color: #F3F3F3;
+	border: thin solid #000;
+	margin-bottom: 10px;
+}
+.searchCarBox .imgSearchCar {
+	background-image: url(/images/search-car.png);
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 300px;
+}
+.searchCarBox .imgExpandSearchCar {
+	background-image: url(/images/search-carExpand.png);
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 360px;
+}
+.searchCarBox .search-row {
+	padding-top: 5px;
+	text-align:left;
+}
+p{
+	text-align:left;
+	padding-top: 5px;
+}
+.dpList {
+	float: left;
+	margin-right: 20px;
+}
+.searchCarBox .BoxStart {
+	padding-top: 20px;
+	padding-bottom:10px;
+}
+.title {
+	font-weight: bold;
+}
+.search-row{
+	height: 60px;
+}
+.txt95px
+{
+	width:95px;
+}
+.imgExpandSearchCarText {
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFF;
+	height: 49px;
+	display: block;
+	line-height: 40px;
+	padding-left: 55px;
+	padding-top: 1px;
+}
+.searchCarBox .listL {
+	float: left;
+	width: 200px;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+.search-row p{}
+.search-row label.title{
+	display: block;
+	font-weight: bold;
+	padding: 0 0 2px 3px;
+}
+#extra_13{
+	width:130px;
+}
+#extra_16{
+	width:130px;
+}
+#extra_7{
+	width:140px;
+}
+#extra_10{
+	width:130px;
+}
+.Box-Left-Menu {
+	float:left;
+	width:225px;
+	margin-right:15px;
+}
+.Box-Left-Content{
+	
+	border: thin solid #666;
+	float:left;
+}
+.Box-Left-Header{
+	height:38px;
+	width:769px;
+	border-bottom: thin solid #666;
+	background-image: url(/images/headerBGBrowserByMake.png);
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #FFF;
+	line-height: 38px;
+	font-size: 22px;
+	padding-left: 15px;
+}
+.Box-Left-Text {
+}
+.left-menu{
+}
+.left-menu li{
+	margin: 0 0 1px;
+	list-style-type: none;
+}
+.left-menu a:link, .left-menu a:visited{
+	background: url(/images/leftmenu-sprite.png) 0 0 no-repeat;
+	color: #1f3345;
+	display: block;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 224px;
+}
+.left-menu a.focus{
+	background-position: 0 -40px;
+	color: #fff;
+}
+.left-menu a:hover
+{
+	background-position: 0 -40px;
+	color: #fff;
+}
+.left-menu li a:hover
+{
+	background-position: 0 -40px;
+	color: #fff;
+}
+.left-menu a span{
+	display: block;
+    float: left;
+    height: 40px;
+    margin: 0 13px;
+    width: 32px;
+}
+.left-menu-compare{background: url(/images/lefticons-sprite.png) 0 0 no-repeat;}
+.left-menu-featured{background: url(/images/lefticons-sprite.png) 0 -40px no-repeat;}
+.left-menu-recently{background: url(/images/lefticons-sprite.png) 0 -80px no-repeat;}
+.left-menu-servicing{background: url(/images/lefticons-sprite.png) 0 -120px no-repeat;}
+.left-menu-warranty{background: url(/images/lefticons-sprite.png) 0 -160px no-repeat;}
+.left-menu-compare-hover{background: url(/images/lefticons-sprite.png) 0 -200px no-repeat;}
+.left-menu-featured-hover{background: url(/images/lefticons-sprite.png) 0 -240px no-repeat;}
+.left-menu-recently-hover{background: url(/images/lefticons-sprite.png) 0 -280px no-repeat;}
+.left-menu-servicing-hover{background: url(/images/lefticons-sprite.png) 0 -320px no-repeat;}
+.left-menu-warranty-hover{background: url(/images/lefticons-sprite.png) 0 -360px no-repeat;}
+.Box-Left-Text {
+	padding: 15px;
+	width:754px;
+}
+
+.Box-Left-Text #textBox {
+	width: 520px;
+	padding: 10px;
+	background-color: #EAEBEC;
+	
+}
+.Box-Left-Text #BoxContactForm {
+	margin-top: 20px;
+	width:550px;
+	float:left;
+}
+
+#BoxContactForm input.text-87{width: 85px}
+#BoxContactForm input.text-189{width: 189px}
+#BoxContactForm input.text-305{width: 305px}
+#BoxContactForm textarea.textarea{
+	height: 149px;
+	padding: 0;
+	width: 415px;
+	
+}
+#BoxContactForm span.text{
+	display: block;
+	float: left;
+	height: 36px;
+}
+#BoxContactForm span.text-102{
+	width: 102px;
+}
+#BoxContactForm span.text-204{
+	width: 204px;
+}
+
+#BoxContactForm span.text-320{
+	width: 320px;
+}
+#BoxContactForm span.textarea{
+	display: block;
+	float: left;
+	height: 167px;
+	width: 332px;
+}
+#BoxContactForm span.left{
+	display: block;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 5px;
+}
+#BoxContactForm p{
+	margin: 10px;
+	overflow: hidden;
+}
+#BoxContactForm p label.title{
+	float: left;
+	margin: 7px 0 0 0;
+	width: 100px;
+}
+.orarBox {
+	width: 191px;
+	float: right;
+	border: thin solid #333;
+}
+.orarBox h3 {
+	margin: 2px 0 16px 0;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.orarBox p {
+	float: left;
+	clear: both;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.orarBox .wtime-day {
+	color: #213347;
+	float: left;
+	clear: left;
+	font-weight: bold;
+}
+.orarBox .wtime-time {
+	color: #3c3c3c;
+	float: right;
+	clear: right;
+}
+.orarBox table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.orarBox .tl, .orarBox .tr, .orarBox .bl, .orarBox .br {
+	width: 6px;
+	height: 6px;
+}
+.orarBox .t, .orarBox .b {
+	height: 6px;
+}
+.orarBox .l, .orarBox .r {
+	width: 6px;
+}
+.orarBox .middle {
+	padding: 6px 6px 4px 6px;
+}
+.ContactMapBox {
+	float: right;
+	width: 193px;
+	margin-top: 12px;
+}
+.ContactMapBox table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.ContactMapBox .tl, .ContactMapBox .tr, .ContactMapBox .bl, .ContactMapBox .br {
+	width: 8px;
+	height: 8px;
+}
+.ContactMapBox .t, .ContactMapBox .b {
+	height: 8px;
+	
+}
+.ContactMapBox .l, .ContactMapBox .r {
+	width: 8px;
+}
+.ContactMapBox .middle {
+	background-color: #e7e7e7;
+	color: #000000;
+	padding:7px;
+}
+.ContactMapBox .middle p {
+	margin-bottom: 6px;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.ContactMapBox #map-canvas {
+	width: 177px;
+	height: 236px;
+	margin: 24px auto 0;
+	border: 1px solid #FFF;
+}
+#PageBrowse .LeftSearchBox {
+	float: left;
+}
+#PageBrowse .RightBrowseBox {
+	float: right;
+}
+.LeftSearchBox .SearchLeft {
+	width: 224px;
+	height: 410px;
+	margin-bottom: 15px;
+	border: 1px solid #999;
+	background-color: #EFEFEF;
+}
+.paddingSearchLeft .search-leftSubmit {
+	text-align: center;
+	margin-top: 5px;
+}
+.SearchLeft .paddingSearchLeft {
+	padding-left: 8px;
+}
+.SearchLeft .SearchLeftHeader {
+	height: 35px;
+	background-image: url(/images/fallback/navOverBG2.gif);
+	line-height: 35px;
+	font-weight: bold;
+	color: #EFEFEF;
+	padding-left: 10px;
+	font-size: 17px;
+}

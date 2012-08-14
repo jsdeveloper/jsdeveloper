@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head>
+      <title>{{@Title}}</title>
+      <meta charset='utf8' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="/api/js/GetAll" type="text/javascript"></script>
+      <script src="/js/wijmo/jquery.wijmo-complete.all.2.0.5.min.js" type="text/javascript"></script>
+      <script src="/js/wijmo/jquery.wijmo-open.all.2.0.5.min.js" type="text/javascript"></script>
+    <link href="/api/css/GetAll" rel="stylesheet" type="text/css"> 
+    <link href="/css/wijmo/jquery.wijmo-open.2.0.5.css" rel="stylesheet" type="text/css"> 
+    <link href="/css/wijmo/themes/arctic/jquery-wijmo.css" rel="stylesheet" type="text/css"> 
+    <link href="/css/wijmo/jquery.wijmo-complete.all.2.0.5.min.css" rel="stylesheet" type="text/css"> 
+    
+   </head>
+   <body>
+   		<div id="container">
+            <div id="boxLogin">
+   		  <div id="Login">
+      	<ul>
+            	<li><a href="#" >Sign Up</a></li>
+                <li><a href="#" >Login</a></li>          
+          	</ul>
+          </div> <!-- #Login end -->       	
+        </div> <!-- #boxLogin end -->
+   		  <div id="header">
+   		     <div id="logo">
+                <a href="/View/Index" >
+                   <img src="/images/logo.png" width="300" height="71" border="0" longdesc="autoDW">
+                </a>
+             </div> <!-- #logo end -->
+          	<div id="nav">
+              <ul id="menu">
+            	<li><a href="/View/Contact" class="{{@MenuContact}}">CONTACT</a></li>
+                <li><a href="/View/About" class="{{@MenuAbout}}">ABOUT</a></li>
+                <li><a href="/View/Browse" class="{{@MenuStock}}">STOCK</a></li>
+                <li><a href="/View/Search" class="{{@MenuSearch}}">SEARCH</a></li>
+                <li><a href="/View/Index" class="{{@MenuHome}}">HOME</a></li>
+              </ul>
+            </div> <!-- #nav end -->
+          </div> <!-- #header end -->
+	      <div id="navspace">
+          </div> <!-- #navspace end -->
+          <div id="RenderBody">
+            <F3:include href="{{@RenderBody}}"/>
+            </div> <!-- #body end -->
+          <div id="footer">
+ 
+              <div id="footernavL">
+                <ul id="footermenu">
+               	  <li><a href="/View/Index">Home</a></li>
+                  <li><a href="/View/Search">Search</a></li>
+                  <li><a href="/View/Browse">Stock</a></li>
+                  <li><a href="/View/About">About</a></li>
+                  <li><a href="/View/Contact">Contact</a></li>                
+                </ul>
+              </div> <!-- #footernavL end -->
+              <div id="footernavR">
+              <a href="/View/Terms">Terms & Conditions</a> | Website by <a href="/View/Index">DW</a>
+              </div> <!-- #footernavR end -->
+          </div> <!-- #footer end -->
+        </div> <!-- #container end -->
+   </body>
+</html>

@@ -1,0 +1,134 @@
+<div class="Box-Left-Menu">
+<ul class="left-menu">
+	<li><a href="#" class=""><span class="left-menu-compare" id="left-menu-compare">&nbsp;</span>Compare cars</a></li>
+	<li><a href="#" class=""><span class="left-menu-featured" id="left-menu-featured">&nbsp;</span>Featured cars</a></li>
+	<li><a href="#" class=""><span class="left-menu-recently" id="left-menu-recently">&nbsp;</span>Recently sold</a></li>
+	<li><a href="#" class=""><span class="left-menu-servicing" id="left-menu-servicing">&nbsp;</span>Servicing</a></li>
+	<li><a href="#" class=""><span class="left-menu-warranty" id="left-menu-warranty">&nbsp;</span>Warranty Info</a></li>
+</ul>
+</div>
+<div class="Box-Left-Content">
+  <div class="Box-Left-Header">
+    Contact
+  </div>
+  <div class="Box-Left-Text">
+  	<div class="orarBox">
+    <table cellpadding="0" cellspacing="0">
+		<tr>
+		<td class="tl"></td>
+		<td class="t"></td>
+		<td class="tr"></td>
+		</tr>
+		<tr>
+		<td class="l"></td>
+		<td class="middle">
+		<h3>Opening time</h3>
+		<p><span class="wtime-day">MON-FRI:</span>
+        <span class="wtime-time">9am - 6:30pm</span></p>
+        <p><span class="wtime-day">SAT:</span>
+        <span class="wtime-time">9:30am - 3pm</span></p>
+		</td>
+		<td class="r"></td>
+		</tr>
+		<tr>
+		<td class="bl"></td>
+		<td class="b"></td>
+		<td class="br"></td>
+		</tr>
+	  </table>
+    </div>
+
+  	<div id="textBox">
+    	If you have any comments, questions or requests please feel free to contact us any time using the form below:
+    </div>
+
+    <form action="/View/Contact" method="post" id="Contact" >
+    <div id="BoxContactForm">
+				<p>
+					<label class="title bold">Name:</label>
+					<span class="text text-320"><input type="text" name="contact_name" id="contact_name" class="text text-305" /></span>
+				</p>
+				
+				<p>
+					<label class="title bold">E-Mail:</label>
+					<span class="text text-320"><input type="text" name="contact_email" id="contact_email" class="text text-305" /></span>
+				</p>
+				
+				<p>
+					<label class="title bold">Phone:</label>
+					<span class="text text-320"><input type="text" name="contact_phone" id="contact_phone" class="text text-305" /></span>
+				</p>
+				
+				<p>
+					<label class="title bold">Message:</label>
+					<span class="textarea"><textarea name="contact_message" id="contact_message" class="textarea"></textarea></span>
+				</p>
+				<p>
+					<label class="title">&nbsp;</label>
+					<input type="submit" value="    Send     " class="button button-send" />
+				</p>
+    </div>
+    </form>
+         <div class="ContactMapBox">
+    		<table cellpadding="0" cellspacing="0">
+			<tr>
+			<td class="tl"></td>
+			<td class="t"></td>
+			<td class="tr"></td>
+			</tr>
+			<tr>
+			<td class="l"></td>
+			<td class="middle">
+			<p class="cname">ezyCarDealer Ltd</p>
+			<p class="address">26th street, North Wildwood <br>08260, United States</p>
+			<p class="phone">111 222 333</p>
+			<p class="fax">444 555 666</p>
+			<p class="email">info@ezycardealer.com</p>
+									
+			<div id="map-canvas"></div>
+			</td>
+			<td class="r"></td>
+			</tr>
+			<tr>
+			<td class="bl"></td>
+			<td class="b"></td>
+			<td class="br"></td>
+			</tr>
+			</table>
+    </div>
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+ <script type="text/javascript">
+       	var ypGeocoder, ypMap;
+	
+	function ypGoogleMapsInit() {
+		ypGeocoder = new google.maps.Geocoder();
+
+		var ypOptions = {
+			zoom: 9,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		
+		ypMap = new google.maps.Map(document.getElementById("map-canvas"), ypOptions);
+	}
+	
+	function ypCodeAddress(address) {
+		ypGeocoder.geocode({"address": address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				ypMap.setCenter(results[0].geometry.location);
+				
+				var marker = new google.maps.Marker({
+					map: ypMap,
+					position: results[0].geometry.location
+				});
+			} else {
+				//alert("Geocode was not successful for the following reason: " + status);
+			}
+		});
+	}
+
+	ypGoogleMapsInit();
+		setTimeout('ypCodeAddress("26th street, North Wildwood 08260, United States")',500);
+    </script>
+  </div>
+</div>
+<div class="clearBox"></div>
